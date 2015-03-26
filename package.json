@@ -1,0 +1,24 @@
+{
+  "name": "Holdfast",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaperElectron/Holdfast.git"
+  },
+  "keywords": [
+    "Docker",
+    "Manager",
+    "Webhooks"
+  ],
+  "author": "Jim <monstertke@paperelectron.com> (http://paperelectron.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaperElectron/Holdfast/issues"
+  },
+  "homepage": "https://github.com/PaperElectron/Holdfast"
+}
