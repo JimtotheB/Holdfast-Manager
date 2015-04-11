@@ -3,10 +3,10 @@
     h3 Connected Hosts: {{connectedHosts.length}}
     .panel(ng-repeat="host in connectedHosts")
       .panel-heading
-        p id: {{host.HostId}}
+        p id: {{host.instanceId}}
       .panel-body
         ul.no-bullet
-          li(ng-repeat="(image, container) in host.Images")
+          li(ng-repeat="(image, container) in host.containers")
             .panel
               .row.clickyFinger(ng-click="this.showContainer = !this.showContainer")
                 .large-6.columns
@@ -18,9 +18,9 @@
                   hr(ng-show="$first")
                   .row
                     .large-6.columns
-                      h5 State: {{c.state}}
+                      h5 Manager State: {{c.ManagerData.ManagedState}}
                     .large-6.columns
-                      h5 Name: {{c.container.Name}}
+                      h5 Name: {{c.ManagerData.Name}}
                   .row
                     .large-12.columns
                        h5(ng-repeat="(p, q) in c.container.Ports")
