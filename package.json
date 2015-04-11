@@ -1,6 +1,6 @@
 {
   "name": "holdfast-manager",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A web client for managing multiple Holdfast instances.",
   "main": "index.js",
   "scripts": {
